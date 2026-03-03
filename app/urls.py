@@ -30,3 +30,15 @@ urlpatterns = [
     # API
     path('api/', include(router.urls)),
 ]
+
+from core.views import CategoriaViewSet, UserViewSet
+
+router = DefaultRouter()
+router.register(r'categorias', CategoriaViewSet, basename='categorias')
+router.register(r'users', UserViewSet, basename='users')
+
+from core.views import CategoriaViewSet, UserViewSet
+
+router = DefaultRouter()
+router.register(r'categorias', CategoriaViewSet, basename='categorias')
+router.register(r'users', UserViewSet, basename='users')
