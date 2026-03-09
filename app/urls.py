@@ -7,7 +7,7 @@ from drf_spectacular.views import (
 )
 from rest_framework.routers import DefaultRouter
 
-from core.views import UserViewSet, EditoraViewSet
+from core.views import EditoraViewSet, UserViewSet
 
 router = DefaultRouter()
 
@@ -32,4 +32,3 @@ urlpatterns = [
     # API
     path('api/', include(router.urls)),
 ]
-
